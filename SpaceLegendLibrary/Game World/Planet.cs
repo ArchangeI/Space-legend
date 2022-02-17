@@ -9,7 +9,7 @@
         public override (int, int) Position { get; set; }
 
         public override Resource resource { get; set; }
-
+        
         public Planet()
         {
             Name = Randomizer.RandomPlanetName();
