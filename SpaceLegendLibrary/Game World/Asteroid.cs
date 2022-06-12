@@ -1,4 +1,6 @@
-﻿namespace SpaceLegendLibrary.Game_World
+﻿using SpaceLegendLibrary.Resources;
+
+namespace SpaceLegendLibrary.Game_World
 {
     public class Asteroid : AstronomicalObject
     {

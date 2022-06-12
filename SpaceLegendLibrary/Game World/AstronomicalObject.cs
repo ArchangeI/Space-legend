@@ -1,4 +1,6 @@
 ﻿
+using SpaceLegendLibrary.Resources;
+
 namespace SpaceLegendLibrary.Game_World
 {
     public abstract class AstronomicalObject
