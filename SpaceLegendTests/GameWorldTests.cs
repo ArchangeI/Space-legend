@@ -10,7 +10,7 @@ namespace SpaceLegendTests
         [Fact]
         public void FirstPlanetPositionOnLeftSide()
         {
-            Map map = new();
+            var map = Map.GetMap();
 
             int minExpectedXPosition = 0;
             int maxExpectedXPosition = 19;
@@ -28,8 +28,7 @@ namespace SpaceLegendTests
         [Fact]
         public void Test1()
         {
-            Map map = new();
-            map.CreateAsteroid();
+            
         }
     }
 }

@@ -4,13 +4,15 @@ namespace SpaceLegendLibrary
 {
     public class Map
     {
+        private static Map instance;
+
         public (int, int) OrbitalStationPos = (20, 20);
 
         public Planet firstPlanet;
         public Planet secondPlanet;
         public Asteroid asteroid;
 
-        public Map()
+        private Map()
         {
             firstPlanet = new()
             {
@@ -20,6 +22,15 @@ namespace SpaceLegendLibrary
             {
                 Position = (Randomizer.RandomPositionX(WhichAstranomicalObject.SecondPlanet), Randomizer.RandomPositionY())
             };
+        }
+
+        public static Map GetMap()
+        {
+            if (instance == null)
+            {
+                instance = new();
+            }
+            return instance;
         }
 
         //If user have 3 victory generate asteroid
